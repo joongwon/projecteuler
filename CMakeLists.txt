@@ -7,3 +7,5 @@ add_subdirectory(problems/002/)
 add_executable(problem_template utils/problem_template.cpp)
 add_subdirectory(problems/003/)
 add_subdirectory(problems/004/)
+
+add_subdirectory(problems/005/)
