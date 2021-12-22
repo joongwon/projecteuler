@@ -27,6 +27,7 @@
 "71636269561882670428252483600823257530420752963450"
 
 #define N 13
+#define SOLVE_OPTION 0
 
 void solve() {
     static_assert(std::size(SERIES) >= N, "series length must be larger than N");
@@ -36,7 +37,7 @@ void solve() {
     for (auto c: raw_series)
         series.push_back(c - '0');
 
-#if 0
+#if SOLVE_OPTION == 0
     std::int64_t max = 0;
     for (int i = N; i <= series.size(); i++) {
         std::int64_t product = std::reduce(series.begin() + (i - N), series.begin() + i, 1, std::multiplies{});
