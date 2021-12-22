@@ -1,1 +1,1 @@
-add_executable(problem003 ../../utils/main.cpp ../../utils/main.h solve.cpp)
+add_executable(problem003 ../../utils/main.cpp ../../utils/main.h solve.cpp ../../utils/Factorize.cpp ../../utils/Factorize.h)

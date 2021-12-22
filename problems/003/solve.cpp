@@ -1,28 +1,9 @@
 #include "../../utils/main.h"
+#include "../../utils/Factorize.h"
 #include <iostream>
-#include <cinttypes>
 #include <vector>
 
 #define NUMBER 600851475143
-
-class Factorize {
-    std::int64_t n;
-    std::int64_t factor = 2;
-public:
-    explicit Factorize(std::int64_t n) : n{n} {}
-
-    std::int64_t operator()() {
-        while (n != 1) {
-            if (n % factor == 0) {
-                n /= factor;
-                return factor;
-            } else {
-                factor++;
-            }
-        }
-        return 1;
-    }
-};
 
 void solve() {
     std::vector<std::int64_t> factors;
