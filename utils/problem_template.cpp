@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <sstream>
 
 class App {
     std::string problem_no;

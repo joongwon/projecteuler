@@ -1,0 +1,1 @@
+add_executable(problem006 ../../utils/main.cpp ../../utils/main.h solve.cpp)
