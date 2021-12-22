@@ -29,6 +29,6 @@ int main(void) {
     auto time_end = std::chrono::steady_clock::now();
     auto duration = time_end - time_begin;
 
-    std::cout << "answer:" << answer << "\n";
-    std::cout << "time:" << duration.count() << "s\n";
+    std::cout << "answer: " << answer << "\n";
+    std::cout << "time: " << duration.count() << "s\n";
 }
