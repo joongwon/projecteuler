@@ -36,6 +36,14 @@ void solve() {
     for (auto c: raw_series)
         series.push_back(c - '0');
 
+#if 0
+    std::int64_t max = 0;
+    for (int i = N; i <= series.size(); i++) {
+        std::int64_t product = std::reduce(series.begin() + (i - N), series.begin() + i, 1, std::multiplies{});
+        if (max < product)
+            max = product;
+    }
+#else
     std::int64_t product = std::reduce(series.begin(), series.begin() + N, 1, std::multiplies{});
     std::int64_t max = product;
     int zeros_in_product = 0;
@@ -52,5 +60,6 @@ void solve() {
         if (!zeros_in_product && product > max)
             max = product;
     }
+#endif
     std::cout << max << std::endl;
 }
