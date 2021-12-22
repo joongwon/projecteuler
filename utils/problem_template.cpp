@@ -74,8 +74,14 @@ public:
         std::filesystem::create_directories(problem_dir);
 
         create_file(problem_dir / "CMakeLists.txt") << "add_executable(problem" << problem_no
-                                                    << " ../../utils/main.cpp ../../utils/main.h)";
+                                                    << " ../../utils/main.cpp ../../utils/main.h solve.cpp)";
         create_file(problem_dir / "readme.md") << "# Problem " << problem_no << "\n## Problem\n\n\n## Solution\n";
+        create_file(problem_dir / "solve.cpp")
+                << "#include \"../../utils/main.h\"\n"
+                   "#include <iostream>\n"
+                   "void solve() {\n"
+                   "    std::cout << \"not solved\" << std::endl;\n"
+                   "}\n";
     }
 
     ~App() {
