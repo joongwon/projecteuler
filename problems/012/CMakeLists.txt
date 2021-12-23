@@ -1,0 +1,1 @@
+add_executable(problem012 ../../utils/main.cpp ../../utils/main.h solve.cpp ../../utils/Factorize.cpp ../../utils/Factorize.h)
