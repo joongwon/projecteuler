@@ -19,3 +19,5 @@ add_subdirectory(problems/008/)
 add_subdirectory(problems/009/)
 
 add_subdirectory(problems/010/)
+
+add_subdirectory(problems/011/)
