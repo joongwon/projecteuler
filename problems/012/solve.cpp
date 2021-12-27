@@ -5,15 +5,6 @@
 #include <numeric>
 #include <functional>
 
-auto factorize(int n) {
-    std::unordered_map<int, int> count_factors;
-    Factorize factors_gen(n);
-    for (int factor = factors_gen(); factor != 1; factor = factors_gen()) {
-        count_factors[factor]++;
-    }
-    return count_factors;
-}
-
 #define DIVISORS 500
 
 void solve() {
